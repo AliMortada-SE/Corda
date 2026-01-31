@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.16)
+project(Corda LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+file(GLOB ALL_SOURCES "src/*.cpp")
+message(STATUS "Files found: ${ALL_SOURCES}")
+
+if(NOT ALL_SOURCES)
+    message(FATAL_ERROR "No source files found in src/ folder!")
+endif()
+add_executable(Corda ${ALL_SOURCES})
+target_include_directories(Corda PRIVATE include)

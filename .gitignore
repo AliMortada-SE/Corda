@@ -1,0 +1,13 @@
+build/
+bin/
+planning/
+else/
+
+*.o
+*.a
+*.so
+
+Corda
+
+.DS_Store
+Thumbs.db
