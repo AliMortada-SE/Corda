@@ -41,7 +41,7 @@ std::string get(std::string target,std::string line){
     }
     return value;
 }
-std::string addValue(std::string tag,std::string value){
+std::string add(std::string tag,std::string value){
     return tag + ':' + value + ';';
 }
 int locateIndex(std::string target,std::string type, std::string line){
